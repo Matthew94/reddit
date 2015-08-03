@@ -135,7 +135,7 @@ class ConnectionManager(local):
 
         return self.connection
 
-    def get_channel(self, reconnect = False):
+    def get_channel(self, reconnect=False):
         # Periodic (and increasing with uptime) errors appearing when
         # connection object is still present, but appears to have been
         # closed.  This checks that the the connection is still open.
